@@ -1,0 +1,142 @@
+/* #root{
+    background-color: #F1EEDC;
+} */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1EEDC;
+}
+.main-page {
+    width: 100%;
+    height: 130vh;
+    
+}
+
+/* nav bar */
+.nav-main {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E5DDC5;
+    background-color:#E5DDC5;
+}
+.nav-title {
+    display: flex;
+    justify-content: center;
+}
+
+.create-button {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* filter */
+.filter-field {
+    margin: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* dashboard */
+.dashboard-main {
+    display: flex;
+    padding: 30px 20px 30px 20px;
+}
+
+/* notes block */
+.note-main {
+    width: 220px;
+    height: 240px;
+    border: 1px solid #B3C8CF;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #B3C8CF;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+}
+.note-main h1 {
+    padding: 15px 0 15px 0;
+}
+.note-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 60px;
+    left: 320px;
+    width: 120vh;
+    height: 100vh;
+    margin: 20px 20px 20px 20px;
+}
+
+/* fields */
+.input-field {
+    margin: 10px 5px 10px 5px;
+}
+
+.text-editor {
+    width: 75%;
+
+    margin: 30px 5px 30px 5px;
+}
+.editor {
+    background-color: whitesmoke;
+}
+.video-field {
+
+    height: 350px;
+    width: 75%;
+    margin: 5px 5px 5px 5px;
+}
+.video-field input {
+    margin-bottom: 20px 0 20px 0;
+
+}
+
+@media screen  and (max-width: 1050){
+    .note-page {
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 790px) {
+    .nav-main {
+        width: 100%;
+    }
+    .dashboard-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .note-main{
+        margin: 30px 0 30px 0;
+        height: 270px;
+        left: 30px;
+    }
+    .note-page {
+        width: 100%;
+        left: 0;
+    }
+    .editor {
+        width: 400px;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    .dashboard-main {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-page{
+        width: 100%;
+    }
+    .note-page {
+        width: 100%;
+        left: 0;
+    }
+    .editor{
+        width: 220px;
+    }
+}
